@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+	<meta name="format-detection" content="telephone=no" />
+	<title>LableOen</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<script type="text/javascript" src="./js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.flexslider.js"></script>
+	<script type="text/javascript" src="./js/iscroll4.js"></script>
+	<script type="text/javascript" src="./js/script.js"></script>
+</head>
+<body>
+	<article class="wrapper">
+		<!-- container  -->
+		<section class="container">
+
+			<!-- header  -->
+			<header class="header">
+				<h1 class="logo"><a href="#"><img src="./images/img_logo.png" alt="labelopen.com" /></a></h1>
+				<a href="#" class="open"><span><img src="./images/icon_menu_btn.png" alt="메뉴열기" /></span></a>
+			</header>
+			<!-- // header  -->
+
+			<!-- contents -->
+			<section class="contents">
+				<h2 class="signup mt10">회원가입</h2>
+				<h3 class="subtitle mt42">회원약관</h3>
+				<div class="agreetext mt10" id="scrollArea01">
+					<div class="scroller">
+						<p>
+							내용<br />내용<br />내용<br />내용<br />내용<br />내용<br />내용<br />내용<br />내용<br />내용<br />내용<br />내용<br />내용<br />내용<br />내용<br />내용<br />내용<br />내용<br />내용<br />내용<br />내용<br />내용<br />내용<br />내용<br />내용<br />내용<br />내용<br />내용<br />내용<br />내용<br />내용<br />내용<br />내용<br />내용<br />내용<br />내용<br />내용<br />
+						</p>
+					</div>
+				</div>
+				<p class="mt15 tar">
+					<input type="checkbox" class="checkStyle" id="chk1" />
+					<label for="chk1">위 약관 내용에 동의합니다.</label>
+				</p>
+				<h3 class="subtitle mt15">회원정보</h3>
+				<div class="tables01">
+					<table>
+						<caption>회원정보입력테이블</caption>
+						<colgroup><col width="35%" /><col width="65%" /></colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">이메일주소</th>
+								<td>
+									<span class="inp01"><input type="text" /></span>
+									<p>잘못된 이메일 주소입니다.</p>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">이메일 주소 재입력</th>
+								<td>
+									<span class="inp01"><input type="text" /></span>
+									<p>이메일 주소가 다릅니다.</p>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">닉네임</th>
+								<td>
+									<span class="inp01"><input type="text" /></span>
+									<p>이미 존재하는 닉네임입니다.</p>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">비밀번호</th>
+								<td>
+									<span class="inp01"><input type="password" /></span>
+									<p>최소 6자 이상이어야 합니다.</p>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">비밀번호 재입력</th>
+								<td>
+									<span class="inp01"><input type="password" /></span>
+									<p>다시 확인해 주시기 바랍니다.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<p class="mt15">
+					<input type="checkbox" class="checkStyle" id="chk2" />
+					<label for="chk2">로그인 상태 유지</label>
+				</p>
+				<div class="mt25">
+					<a href="#" class="btn btncolor01"><span>회원가입</span></a>
+				</div>
+				<script>
+					$(window).load(function(){
+						var myScroll = new iScroll('scrollArea01');
+					})
+				</script>
+			</section>
+			<!-- // contents -->
+			
+			<!-- footer -->
+			<footer class="footer">
+				<a href="#" class="footlogo"><img src="./images/img_foot_logo.png" alt="labelopen.com" /></a>
+				<div class="languageSelect">
+					<span>
+						<select>
+							<option>Select Language</option>
+							<option>English</option>
+							<option>Chinese</option>
+							<option>Japanese</option>
+						</select>
+					</span>
+				</div>
+			</footer>
+			<!-- footer -->
+
+		</section>
+		<!-- // container  -->
+		
+		<!-- gnb -->
+		<aside class="gnb">
+			<div class="btnarea"><a href="#" class="close"><img src="./images/icon_gnb_close.png" alt="메뉴닫기" /></a></div>
+			<ul>
+				<li><a href="#"><span>로그인</span></a></li>
+				<li><a href="#"><span>회원가입</span></a></li>
+				<li><a href="#"><span>My 레이블</span></a></li>
+				<li><a href="#"><span>My Favorite</span></a></li>
+				<li><a href="#"><span>서비스 소개</span></a></li>
+				<li><a href="#"><span>수익공유프로그램</span></a></li>
+				<li><a href="#"><span>회원약관</span></a></li>
+				<li><a href="#"><span>회원정보수정</span></a></li>
+			</ul>
+		</aside>
+		<!-- gnb -->
+	</article>
+</body>
+</html>

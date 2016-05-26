@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+	<meta name="format-detection" content="telephone=no" />
+	<title>LableOen</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<script type="text/javascript" src="./js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.flexslider.js"></script>
+	<script type="text/javascript" src="./js/iscroll4.js"></script>
+	<script type="text/javascript" src="./js/script.js"></script>
+</head>
+<body>
+	<article class="wrapper">
+		<!-- container  -->
+		<section class="container">
+
+			<!-- header  -->
+			<header class="header">
+				<h1 class="logo"><a href="#"><img src="./images/img_logo.png" alt="labelopen.com" /></a></h1>
+				<a href="#" class="open"><span><img src="./images/icon_menu_btn.png" alt="메뉴열기" /></span></a>
+			</header>
+			<!-- // header  -->
+
+			<!-- contents -->
+			<section class="contents">
+				<h2 class="pagetitle"><span>상품 레이블 등록하기</span></h2>
+				<ul class="tabMenu mt42">
+					<li><a href="#"><span>등록확인</span></a></li>
+					<li class="active"><a href="#"><span>정보입력</span></a></li>
+				</ul>
+				<div class="infotitle mt32">
+					<h3>정보입력</h3>
+					<span>필수입력</span>
+				</div>
+				<dl class="inputList mt25">
+					<dt class="first">
+						<em>바코드</em>
+						<span>반드시 입력해야 하는 항목입니다. (숫자만 입력 가능)</span>
+					</dt>
+					<dd>
+						<div class="inputSt01 warning"><input type="text" /></div>
+					</dd>
+					<dt>
+						<em>상품명</em>
+						<span>반드시 입력해야 하는 항목입니다.</span>
+					</dt>
+					<dd>
+						<div class="inputSt01 warning"><input type="text" /></div>
+					</dd>
+					<dt>
+						<em>제조사</em>
+						<span>반드시 입력해야 하는 항목입니다.</span>
+					</dt>
+					<dd>
+						<div class="inputSt01 warning"><input type="text" /></div>
+					</dd>
+					<dt>
+						<em>원산지</em>
+						<span>반드시 입력해야 하는 항목입니다.</span>
+					</dt>
+					<dd>
+						<div class="inputSt01 warning"><input type="text" /></div>
+					</dd>
+					<dt>
+						<em>원산지</em>
+						<span>최소 1개 이상의 이미지를 등록해야 합니다.</span>
+					</dt>
+					<dl>
+						<ul class="fileList">
+							<li>
+								<div class="fakefile warning">
+									<input type="text" placeholder="바코드 이미지(필수)" />
+									<input type="file" class="fileUpload" />
+								</div>
+							</li>
+							<li>
+								<div class="fakefile warning">
+									<input type="text" placeholder="상품 레이블 이미지 (필수)" />
+									<input type="file" class="fileUpload" />
+								</div>
+							</li>
+							<li>
+								<div class="fakefile warning">
+									<input type="text" placeholder="상품 이미지 (필수)" />
+									<input type="file" class="fileUpload" />
+								</div>
+							</li>
+							<li>
+								<div class="fakefile warning">
+									<input type="text" />
+									<input type="file" class="fileUpload" />
+								</div>
+							</li>
+						</ul>
+					</dl>
+				</dl>
+				<div class="addBtn mt10" id="addBtn01"><a href="#"><span>추가</span></a></div>
+				<p class="must mt32">반드시 바코드, 상품레이블, 상품 이미지(최소 1개)를 등록해야 합니다.</p>
+				<div class="infotitle bd0 mt32">
+					<h3>상품레이블</h3>
+					<em>항목명이 없는 경우에는 빈 공란으로 두세요</em>
+				</div>
+				<ul class="labelList">
+					<li>
+						<div><input type="text" placeholder="항목명" /></div>
+						<div><input type="text" placeholder="내용" /></div>
+					</li>
+					<li>
+						<div><input type="text" placeholder="항목명" /></div>
+						<div><input type="text" placeholder="내용" /></div>
+					</li>
+					<li>
+						<div><input type="text" placeholder="항목명" /></div>
+						<div><input type="text" placeholder="내용" /></div>
+					</li>
+					<li>
+						<div><input type="text" placeholder="항목명" /></div>
+						<div><input type="text" placeholder="내용" /></div>
+					</li>
+				</ul>
+				<div class="addBtn mt10" id="addBtn02"><a href="#"><span>추가</span></a></div>
+				<div class="btnwrap mt32">
+					<ul class="submittab">
+						<li class="save"><a href="#"><span>임시저장</span></a></li>
+						<li class="prevew"><a href="#"><span>미리보기</span></a></li>
+					</ul>
+					<a href="#" class="btntype01 fr"><span>등록</span></a>
+				</div>
+			</section>
+			<!-- // contents -->
+			
+			<!-- footer -->
+			<footer class="footer">
+				<a href="#" class="footlogo"><img src="./images/img_foot_logo.png" alt="labelopen.com" /></a>
+				<div class="languageSelect">
+					<span>
+						<select>
+							<option>Select Language</option>
+							<option>English</option>
+							<option>Chinese</option>
+							<option>Japanese</option>
+						</select>
+					</span>
+				</div>
+			</footer>
+			<!-- footer -->
+
+		</section>
+		<!-- // container  -->
+		
+		<!-- gnb -->
+		<aside class="gnb">
+			<div class="btnarea"><a href="#" class="close"><img src="./images/icon_gnb_close.png" alt="메뉴닫기" /></a></div>
+			<ul>
+				<li><a href="#"><span>로그인</span></a></li>
+				<li><a href="#"><span>회원가입</span></a></li>
+				<li><a href="#"><span>My 레이블</span></a></li>
+				<li><a href="#"><span>My Favorite</span></a></li>
+				<li><a href="#"><span>서비스 소개</span></a></li>
+				<li><a href="#"><span>수익공유프로그램</span></a></li>
+				<li><a href="#"><span>회원약관</span></a></li>
+				<li><a href="#"><span>회원정보수정</span></a></li>
+			</ul>
+		</aside>
+		<!-- gnb -->
+	</article>
+</body>
+</html>
