@@ -12,15 +12,15 @@ var moduleUI = (function(moduleUI, $, undefined){
 		};
 		this.initEvent = function(){
 			var objThis = this;
-			$(this.openBtn).on("touchend", function(e){
+			$(this.openBtn).on("click", function(e){
 				e.preventDefault();
 				objThis.open();
 			});
-			$(this.closeBtn).on("touchend", function(e){
+			$(this.closeBtn).on("click", function(e){
 				e.preventDefault();
 				objThis.close();
 			});
-			$("body").on("touchend", ".bg", function(){
+			$("body").on("click", ".bg", function(){
 				objThis.close();
 			});
 		};
@@ -60,23 +60,28 @@ var moduleUI = (function(moduleUI, $, undefined){
 		};
 		this.init( fileUpload );
 	};
-	// 클릭시 리스트 추가
+	// 클릭시 리스트 추가 / 삭제
 	moduleUI.inputFileAdd = function( ){
 		this.init = function(){
 			this.listcon01 = ".fileList";
 			this.listcon02 = ".labelList";
+			this.del = ".remove"
 			this.initEvent();
 		}
 		this.initEvent = function(){
 			var that = this;
-			$("#addBtn01").on("touchend", function(e){
+			$("#addBtn01").on("click", function(e){
 				e.preventDefault();
-				$(that.listcon01).append("<li><div class='fakefile'><input type='text' /><input type='file' class='fileUpload' /></div></li>");
+				$(that.listcon01).append("<li><div class='fakefile'><input type='text' /><input type='file' class='fileUpload' /><a href='' class='remove'></a></div></li>");
 			});
-			$("#addBtn02").on("touchend", function(e){
+			$("#addBtn02").on("click", function(e){
 				e.preventDefault();
-				$(that.listcon02).append("<li><div><input type='text' placeholder='항목명'' /></div><div><input type='text' placeholder='내용'' /></div></li>");
+				$(that.listcon02).append("<li><div><input type='text' placeholder='항목명'' /></div><div><input type='text' placeholder='내용'' /></div><a href='' class='remove'></a></li>");
 			})
+			$("body").on("click", that.del, function(e){
+				e.preventDefault();
+				$(this).parents("li").remove();
+			});
 		}
 		this.init();
 	}
@@ -89,7 +94,7 @@ var moduleUI = (function(moduleUI, $, undefined){
 		}
 		this.initEvent = function(){
 			var that = this;
-			$(this.menu).on("touchend", function(){
+			$(this.menu).on("click", function(){
 				var tg = $(this);
 				if( !tg.find("> ul").is(":visible") ){
 					tg.find("> ul").addClass("active");

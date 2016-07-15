@@ -48,7 +48,7 @@
 .barcode img{width:163px;}
 .barcodList li{padding-left:5px;background:url("../images/icon_dot.png") no-repeat 0 6px;background-size:2px;line-height:1.5em;font-size:11px;}
 
-.layerpop{width:224px;}
+.layerpop{width:224px;background:#fff;}
 .layerpop h1{height:40px;text-align:center;background:#000;font-weight:normal;font-family:"NanumBarunBold";}
 .layerpop h1 span{display:block;padding-top:12px;color:#fff;}
 .layerpop .popcontants{padding:20px;}
@@ -71,18 +71,20 @@
 
 .fileList li{margin-top:5px;}
 .fileList li:first-child{margin-top:5px;}
-.fakefile{position:relative;border:1px solid #000;padding:0 40px 0 12px;}
+.fakefile{position:relative;border:1px solid #000;padding:0 82px 0 12px;}
 .fakefile input[type="text"]{width:100%;height:42px;border:0;}
 .fakefile input.fileUpload{position:absolute;right:13px;top:0;z-index:20;width:40px;height:42px;opacity:0;-webkit-appearance:none;border:0;}
 .fakefile:after{content:"";position:absolute;right:0;top:0;z-index:10;width:40px;height:42px;display:block;background:url("../images/icon_file.png") no-repeat center center;background-size:14px;}
+.fakefile .remove{position:absolute;top:0;right:40px;width:40px;height:42px;display:block;background:url("../images/icon_del.png") no-repeat center center;background-size:14px;}
 
-.labelList li{margin-top:5px;}
+.labelList li{position:relative;margin-top:5px;}
 .labelList li:first-child{margin-top:0;}
 .labelList li:after{content:"";display:block;clear:both;}
 .labelList li div{float:left;border:1px solid #000;box-sizing:border-box;}
 .labelList li div:first-child{width:24.5%;}
 .labelList li div:first-child + div{width:74.5%;margin-left:1%;}
 .labelList li input{width:100%;height:42px;border:0;text-indent:12px;}
+.labelList li .remove{position:absolute;top:0;right:0;width:40px;height:42px;display:block;background:url("../images/icon_del.png") no-repeat center center;background-size:14px;}
 
 .btnwrap:after{content:"";display:block;clear:both;}
 .submittab{float:left;display:inline-block;border:1px solid #ccc;}
@@ -247,3 +249,9 @@
 .serviceMenu ul li:nth-child(1) a{background:url("../images/icon_gnb06.png") no-repeat 0 center;background-size:8px;}
 .serviceMenu ul li:nth-child(2) a{background:url("../images/icon_gnb07.png") no-repeat 0 center;background-size:8px;}
 .conbox{padding:10px;height:435px;border:1px solid #ccc;}
+
+.progressbar{width:224px;height:60px;background:#fff;text-align:center;}
+.progressbar .inArea{padding-top:24px;}
+.progressbar .bar{width:160px;height:12px;display:inline-block;background:#ebebeb;border-radius:10px;}
+.progressbar .bar p{height:12px;background:#4785f0;border-radius:10px;}
+.progressbar .txt{color:#4785f0;}
