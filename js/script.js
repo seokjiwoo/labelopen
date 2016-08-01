@@ -72,11 +72,11 @@ var moduleUI = (function(moduleUI, $, undefined){
 			var that = this;
 			$("#addBtn01").on("click", function(e){
 				e.preventDefault();
-				$(that.listcon01).append("<li><div class='fakefile'><input type='text' /><input type='file' class='fileUpload' /><a href='' class='remove'></a></div></li>");
+				$(that.listcon01).append("<li><div class='fakefile'><input type='text' /><input type='file' class='fileUpload' /><a href='' class='remove'>삭제</a></div></li>");
 			});
 			$("#addBtn02").on("click", function(e){
 				e.preventDefault();
-				$(that.listcon02).append("<li><div><input type='text' placeholder='항목명'' /></div><div><input type='text' placeholder='내용'' /></div><a href='' class='remove'></a></li>");
+				$(that.listcon02).append("<li><div><input type='text' placeholder='항목명'' /></div><div><input type='text' placeholder='내용'' /></div><a href='' class='remove'>삭제</a></li>");
 			})
 			$("body").on("click", that.del, function(e){
 				e.preventDefault();
